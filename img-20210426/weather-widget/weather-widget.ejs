@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="/emma-mapstyle.css" type="text/css">
+
+<span class="weatherToggleSurround">
+    <img class="c-d-default-none weatherDesc" id="wToggleiconDark" src="app/weatherSidebarDark.svg">
+    <img class="c-d-dark-none weatherDesc" id="wToggleiconLight" src="app/weatherSidebarLight.svg">
+</span>
+
+<!-- test -->
+<div class="weather-panel bg-light" id="weather-panel">
+    <div title="Toggle Controls" id="toggle-panel">
+
+        <div id="weather-controls" style="width:fit-content;">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 132.962"
+                enable-background="new 0 0 448 132.962" xml:space="preserve">
+                <g id="darkForecast" class="c-d-default-none">
+                    <rect fill="#20202A" width="448" height="132.962" />
+                    <text id="cityNameDark" transform="matrix(1 0 0 1 150 35.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Light'" font-size="15px">Dana Point, CA</text>
+                    <text transform="matrix(1 0 0 1 24 62.981)" fill="#FFFFFF" font-family="'Avenir-Light'"
+                        font-size="15px">Sunrise: </text>
+
+                    <text id="sunriseTodayDark" transform="matrix(1 0 0 1 80.1445 62.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Medium'" font-size="15px">6:05 AM</text>
+                    <text transform="matrix(1 0 0 1 28 83.981)" fill="#FFFFFF" font-family="'Avenir-Light'"
+                        font-size="15px">Sunset: </text>
+
+                    <text id="sunsetTodayDark" transform="matrix(1 0 0 1 80.5446 83.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Medium'" font-size="15px">6:05 AM</text>
+                    <line id="Line_3_1_" fill="none" stroke="#F9F9F9" x1="280.5" y1="31.481" x2="280.5" y2="101.481" />
+                    <text id="oneNextDayDark" transform="matrix(1 0 0 1 310 35.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Medium'" font-size="15px">SAT</text>
+                    <text id="twoNextDayDark" transform="matrix(1 0 0 1 380 35.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Medium'" font-size="15px">SUN</text>
+                    <text id="twoDayMaxDark" transform="matrix(1 0 0 1 374 106.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Medium'" font-size="15px">72°</text>
+                    <text id="twoDayMinDark" transform="matrix(1 0 0 1 400 106.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Light'" font-size="15px">54°</text>
+                    <text id="oneDayMaxDark" transform="matrix(1 0 0 1 299 104.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Medium'" font-size="15px">84°</text>
+                    <text id="oneDayMinDark" transform="matrix(1 0 0 1 325 104.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Light'" font-size="15px">62°</text>
+                    <text id="maxTempDark" transform="matrix(1 0 0 1 178 103.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Medium'" font-size="15px">89°</text>
+                    <text id="minTempDark" transform="matrix(1 0 0 1 204 103.981)" fill="#FFFFFF"
+                        font-family="'Avenir-Light'" font-size="15px">62°</text>
+
+                    <image overflow="visible" enable-background="new    " width="209" height="209" id="currentIconDark"
+                        xlink:href="weathericons/01d-dark.png" transform="matrix(0.1512 0 0 0.1512 185.2085 48.6827)">
+                    </image>
+
+                    <image overflow="visible" enable-background="new    " width="209" height="209" id="oneDayIconDark"
+                        xlink:href="weathericons/01d-dark.png" transform="matrix(0.1195 0 0 0.1195 310.5772 51.9933)">
+                    </image>
+
+                    <image overflow="visible" enable-background="new    " width="209" height="209" id="twoDayIconDark"
+                        xlink:href="weathericons/01d-dark.png" transform="matrix(0.1195 0 0 0.1195 382.9322 51.9933)">
+                    </image>
+                    <rect id="closeWeatherPanelDark" opacity=".01" width="448" height="132.962" />
+                </g>
+                <g id="lightForecast" class="c-d-dark-none">
+                    <rect fill="#FFFFFF" width="448" height="132.962" />
+                    <text id="cityName" transform="matrix(1 0 0 1 150 35.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Light'" font-size="15px">Dana Point, CA</text>
+                    <text transform="matrix(1 0 0 1 24 62.981)" fill="#4E4E4E" font-family="'Avenir-Light'"
+                        font-size="15px">Sunrise: </text>
+
+                    <text id="sunriseToday" transform="matrix(1 0 0 1 80.1445 62.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Medium'" font-size="15px">6:05 AM</text>
+                    <text transform="matrix(1 0 0 1 28 83.981)" fill="#4E4E4E" font-family="'Avenir-Light'"
+                        font-size="15px">Sunset: </text>
+
+                    <text id="sunsetToday" transform="matrix(1 0 0 1 80.5446 83.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Medium'" font-size="15px">6:05 AM</text>
+                    <line id="Line_3" fill="none" stroke="#20202A" x1="280.5" y1="31.481" x2="280.5" y2="101.481" />
+                    <text id="oneNextDay" transform="matrix(1 0 0 1 310 35.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Medium'" font-size="15px">SAT</text>
+                    <text id="twoNextDay" transform="matrix(1 0 0 1 380 35.981)" fill="#4E4E4E" font-family="'Avenir-Medium'"
+                        font-size="15px">SUN</text>
+                    <text id="twoDayMax" transform="matrix(1 0 0 1 374 106.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Medium'" font-size="15px">72°</text>
+                    <text id="twoDayMin" transform="matrix(1 0 0 1 400 106.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Light'" font-size="15px">54°</text>
+                    <text id="oneDayMax" transform="matrix(1 0 0 1 299 104.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Medium'" font-size="15px">84°</text>
+                    <text id="oneDayMin" transform="matrix(1 0 0 1 325 104.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Light'" font-size="15px">62°</text>
+                    <text id="maxTemp" transform="matrix(1 0 0 1 178 103.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Medium'" font-size="15px">89°</text>
+                    <text id="minTemp" transform="matrix(1 0 0 1 204 103.981)" fill="#4E4E4E"
+                        font-family="'Avenir-Light'" font-size="15px">62°</text>
+
+                    <image overflow="visible" enable-background="new    " width="209" height="209" id="currentIcon"
+                        xlink:href="weathericons/01d-dark.png" transform="matrix(0.1512 0 0 0.1512 185.2085 48.6827)">
+                    </image>
+
+                    <image overflow="visible" enable-background="new    " width="209" height="209" id="oneDayIcon"
+                        xlink:href="weathericons/01d-dark.png" transform="matrix(0.1195 0 0 0.1195 310.5772 51.9933)">
+                    </image>
+
+                    <image overflow="visible" enable-background="new    " width="209" height="209" id="twoDayIcon"
+                        xlink:href="weathericons/01d-dark.png" transform="matrix(0.1195 0 0 0.1195 382.9322 51.9933)">
+                    </image>
+                    <rect id="closeWeatherPanel" opacity=".01" width="448" height="132.962" />
+                </g>
+            </svg>
+
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<script>
+
+    $("#weather-panel").hide();
+
+    $("#closeWeatherPanel").mouseover(function () {
+        $("#closeWeatherPanel").css('cursor', 'pointer');
+    });
+    $("#closeWeatherPanelDark").mouseover(function () {
+        $("#closeWeatherPanelDark").css('cursor', 'pointer');
+    });
+
+    $("#wToggleiconDark").on("click", function (e) {
+
+      $("#weather-panel").show();
+      $("#wToggleiconDark").hide();
+      $("#wToggleicon").hide();
+
+    });
+
+    $("#wToggleiconLight").on("click", function (e) {
+        $("#weather-panel").show();
+      $("#wToggleiconDark").hide();
+      $("#wToggleicon").hide();
+    });
+    $("#weather-panel").on("click", function (e) {
+
+        $("#weather-panel").hide();
+      $("#wToggleiconDark").show();
+      $("#wToggleicon").show();
+    });
+
+</script>
